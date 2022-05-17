@@ -11,6 +11,8 @@ namespace Unit02.Game
     /// </summary>
     public class Director
     {
+        //This list below is a list of six dice objects, that's why the data type has the "Die" instead 
+        //of "string" or "int."
         List<Die> dice = new List<Die>();
         bool isPlaying = true;
         int score = 0;
@@ -64,7 +66,11 @@ namespace Unit02.Game
             score = 0;
             foreach (Die die in dice)
             {
-                die.Roll();
+                //rolls each of the dice
+                die.Roll(); //As soon as this function rolls, the 'value' and 'points' variable in the 'Die'
+                // function are now changed, and different. Which is why we can increment the 'die.points.'
+                // The variable is already changed, becuase it changes in the .Roll() function.
+                //adds the score together after the Roll function is complete
                 score += die.points;
             }
             totalScore += score;

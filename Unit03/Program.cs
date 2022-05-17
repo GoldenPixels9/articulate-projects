@@ -14,8 +14,8 @@ namespace Unit03
         /// <param name="args">The given arguments.</param>
         static void Main(string[] args)
         {
-            Director director = new Director();
-            director.StartGame();
+            Director director = new Director(); //creates an instance of the director class
+            director.StartGame(); //director instance uses the start game function
         }
     }
 }

@@ -8,10 +8,10 @@ namespace Unit03.Game
     /// </summary>
     public class Director
     {
-        private Hider hider = new Hider();
-        private bool isPlaying = true;
-        private Seeker seeker = new Seeker();
-        private TerminalService terminalService = new TerminalService();
+        private Hider hider = new Hider(); // private hider object
+        private bool isPlaying = true; //private game boolean to tell if game is in session
+        private Seeker seeker = new Seeker(); //private seeker object, also has an error.
+        private TerminalService terminalService = new TerminalService(); //private object of the terminal service class.
 
         /// <summary>
         /// Constructs a new instance of Director.

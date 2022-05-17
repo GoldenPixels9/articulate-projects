@@ -3,9 +3,27 @@ using System;
 
 namespace Unit03.Game
 {
+    
+    class Seeker {
+        Random random = new Random();
+        int location;
+
+        public Seeker() {
+            this.location = random.Next(1, 1000);
+        }
+
+        public int GetLocation() {
+            return this.location;
+        }
+
+        public void MoveLocation(int location){
+            this.location = location;
+        }
+    }
+}
     // TODO: Implement the Seeker class as follows...
 
-    // 1) Add the class declaration. Use the following class comment.
+    // 1) Add the class declaration. Use the following class comment. 
 
         /// <summary>
         /// <para>The person looking for the Hider.</para>
@@ -36,5 +54,3 @@ namespace Unit03.Game
         /// Moves to the given location.
         /// </summary>
         /// <param name="location">The given location.</param>
-    
-}

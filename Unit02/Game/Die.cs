@@ -33,7 +33,7 @@ namespace Unit02.Game
         /// A small cube with a different number of spots on each of its six sides.
         /// 
         /// The responsibility of Die is to keep track of its currently rolled value and the points its
-        /// worth.
+        /// worth. (This is the overall responsibility of the class)
         /// </summary> 
 
 

@@ -4,7 +4,7 @@ using System;
 namespace Unit03.Game
 {
     
-    class Seeker {
+    public class Seeker {
         Random random = new Random();
         int location;
 

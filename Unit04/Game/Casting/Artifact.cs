@@ -1,5 +1,25 @@
+using System;
+
 namespace Unit04.Game.Casting
 {
+    public class Artifact : Actor
+    {
+        string message;
+        public Artifact()
+        {
+        }
+
+        public string GetMessage()
+        {
+            return message;
+        }
+
+        public void SetMessage(string message)
+        {
+            this.message = message;
+        }
+    } 
+}
     // TODO: Implement the Artifact class here
 
     // 1) Add the class declaration. Use the following class comment. Make sure you
@@ -34,5 +54,3 @@ namespace Unit04.Game.Casting
         /// Sets the artifact's message to the given value.
         /// </summary>
         /// <param name="message">The given message.</param>
-    
-}

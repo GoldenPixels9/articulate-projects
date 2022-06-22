@@ -4,6 +4,25 @@ using Unit05.Game.Casting;
 
 namespace Unit05.Game.Scripting
 {
+    class MoveActorsAction : Action
+    {
+
+        public MoveActorsAction()
+        {
+        }
+        
+        void Action.Execute(Cast cast, Script script)
+        {
+            List<Actor> actorList = new List<Actor>();
+            actorList = cast.GetAllActors();
+            foreach(Actor actor in actorList)
+            {
+                actor.MoveNext();
+            }
+        }
+
+    }
+}
     // TODO: Implement the MoveActorsAction class here
 
     // 1) Add the class declaration. Use the following class comment. Make sure you
@@ -28,4 +47,3 @@ namespace Unit05.Game.Scripting
     //    b) loop through all the actors
     //    c) call the MoveNext() method on each actor.
 
-}
